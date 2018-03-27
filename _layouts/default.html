@@ -18,6 +18,7 @@
 
   </head>
   <body>
+      {% if site.header %}
       <div id="header">
         <nav>
           <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
@@ -28,6 +29,7 @@
           {% endif %}
         </nav>
       </div><!-- end header -->
+      {% endif %}
 
     <div class="wrapper">
 
