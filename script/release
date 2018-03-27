@@ -13,8 +13,8 @@ bundle update
 
 # Build a new gem archive.
 
-rm -rf jekyll-theme-midnight-*.gem
-gem build -q jekyll-theme-midnight.gemspec
+rm -rf jekyll-theme-dracula-*.gem
+gem build -q jekyll-theme-dracula.gemspec
 
 # Make sure we're on the master branch.
 
@@ -25,7 +25,7 @@ gem build -q jekyll-theme-midnight.gemspec
 
 # Figure out what version we're releasing.
 
-tag=v`ls jekyll-theme-midnight-*.gem | sed 's/^jekyll-theme-midnight-\(.*\)\.gem$/\1/'`
+tag=v`ls jekyll-theme-dracula-*.gem | sed 's/^jekyll-theme-dracula-\(.*\)\.gem$/\1/'`
 
 # Make sure we haven't released this version before.
 
@@ -38,5 +38,5 @@ git fetch -t origin
 
 # Tag it and bag it.
 
-gem push jekyll-theme-midnight-*.gem && git tag "$tag" &&
+gem push jekyll-theme-dracula-*.gem && git tag "$tag" &&
   git push origin master && git push origin "$tag"
