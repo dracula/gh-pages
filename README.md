@@ -1,6 +1,6 @@
 # The Dracula theme
 
-[![Build Status](https://travis-ci.org/backlands/dracula.svg?branch=master)](https://travis-ci.org/backlands/dracula) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-dracula.svg)](https://badge.fury.io/rb/jekyll-theme-dracula)
+[![Build Status](https://travis-ci.org/backlands/dracula.svg?branch=master)](https://travis-ci.org/backlands/dracula)
 
 *Dracula is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://backlands.github.io/dracula), or even [use it today](#usage).*
 
