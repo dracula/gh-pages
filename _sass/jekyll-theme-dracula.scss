@@ -99,13 +99,11 @@ code {
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
-  border-radius: 2px;
 }
 
 pre {
   padding:8px 15px;
   background: #282a36;
-  border-radius: 2px;
   border:1px solid #ff79c6;
   overflow: auto;
   overflow-y: hidden;
@@ -182,7 +180,6 @@ dt {
         color: #f8f8f2;
         border: 1px solid #8be9fd;
         background: none;
-        border-radius: 0;
         padding: 10px 12px;
         margin-top: 6px;
         line-height:14px;
@@ -242,7 +239,9 @@ section {
       font-size: 18px;
       text-align: center;
     }
-
+  }
+  #footer {
+    hr { margin-top:30px; }
     .credits {
       font-size: 11px;
       font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -258,7 +257,6 @@ section {
         float: right;
       }
     }
-
   }
 }
 
