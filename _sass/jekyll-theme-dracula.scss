@@ -6,15 +6,15 @@ body {
   padding:0px 0 20px 0px;
   margin: 0px;
   font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#e9e9f4;
+  color:#f8f8f2;
   font-weight: normal;
-  background: #282936;
+  background: #282a36;
   background-attachment: fixed !important;
-  background: linear_gradient(#282936, #3a3b50);
+  background: linear_gradient(#282a36, #3a3b50);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#f7f7fb;
+  color: #8be9fd;
   margin:0 0 10px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -30,6 +30,7 @@ h1, h2, h3 {
 }
 
 h1 {
+  color:#50fa7b;
   font-size:28px;
 }
 
@@ -38,7 +39,7 @@ h2 {
 }
 
 h4, h5, h6 {
-  color:#f7f7fb;
+  color:#f1fa8c;
 }
 
 h3 {
@@ -46,22 +47,21 @@ h3 {
   line-height: 24px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
-  color: #e9e9f4;
 }
 
 a {
-  color:#00f769;
+  color:#50fa7b;
   font-weight:400;
   text-decoration:none;
 
   &:hover {
-    color: #01a749;
+    color: #50fa7bb3;
   }
 }
 
 a small {
   font-size:11px;
-  color:#626483;
+  color:#6272a4;
   margin-top:-0.6em;
   display:block;
 }
@@ -87,7 +87,7 @@ section img {
 }
 
 blockquote {
-  border-left:3px solid #00f769;
+  border-left:3px solid #50fa7b;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
@@ -95,7 +95,7 @@ blockquote {
 
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
-  color:#e9e9f4;
+  color:#f8f8f2;
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -104,14 +104,14 @@ code {
 
 pre {
   padding:8px 15px;
-  background: #282936;
+  background: #282a36;
   border-radius: 2px;
-  border:1px solid #ea51b2;
+  border:1px solid #ff79c6;
   overflow: auto;
   overflow-y: hidden;
 
   code {
-    color: #e9e9f4;
+    color: #f8f8f2;
     margin: 0;
     padding: 0;
   }
@@ -125,8 +125,8 @@ table {
 th {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #ea51b2;
-  color: #e9e9f4;
+  border-bottom:1px solid #ff79c6;
+  color: #8be9fd;
   font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
 }
@@ -134,19 +134,19 @@ th {
 td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #b45bcf;
+  border-bottom:1px solid #bd93f9;
 }
 
 hr {
   border: 0;
   outline: none;
   height: 3px;
-  background: transparent url('../images/hr.gif') center center repeat-x;
+  background: #50fa7b;
   margin: 0 0 20px;
 }
 
 dt {
-  color:#ebff87;
+  color:#f1fa8c;
   font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
 }
@@ -159,15 +159,14 @@ dt {
   height: 60px;
   width: 100%;
   position: fixed;
-  background: #626483;
-  border-bottom: 4px solid #ea51b2;
+  background: #44475a;
+  border-bottom: 4px solid #8be9fd;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
 
   nav {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 10px;
-    background: blue;
     margin: 6px auto;
 
     li {
@@ -175,17 +174,15 @@ dt {
       font-weight: normal;
       list-style: none;
       display: inline;
-      color: white;
+      color: #f8f8f2;
       line-height: 50px;
       font-size: 14px;
 
       a {
-        color: white;
-        border: 1px solid #b45bcf;
-        background: linear_gradient(#ea51b2, #b9438e);
-        border-radius: 2px;
-
-        background-color: #ea51b2;
+        color: #f8f8f2;
+        border: 1px solid #8be9fd;
+        background: none;
+        border-radius: 0;
         padding: 10px 12px;
         margin-top: 6px;
         line-height:14px;
@@ -194,9 +191,8 @@ dt {
         text-align:center;
 
         &:hover {
-          background: linear_gradient(#b45bcf, #924aa8);
-          background-color: #b45bcf;
-          border: 1px solid #ea51b2;
+          background-color: #6272a4;
+          border: 1px solid #6272a4;
         }
       }
 
@@ -240,7 +236,7 @@ section {
     }
 
     p {
-      color: #e9e9f4;
+      color: #f8f8f2;
       font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-size: 18px;
@@ -251,7 +247,7 @@ section {
       font-size: 11px;
       font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
-      color: #626483;
+      color: #6272a4;
       margin-top: -10px;
 
       &.left {
