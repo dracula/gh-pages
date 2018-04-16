@@ -1,12 +1,14 @@
-# The Dracula theme
+# Dracula for [GitHub Pages](https://pages.github.com/)
 
 [![Build Status](https://travis-ci.org/backlands/dracula.svg?branch=master)](https://travis-ci.org/backlands/dracula)
 
-*Dracula is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://backlands.github.io/dracula), or even [use it today](#usage).*
+> A dark theme for [GitHub Pages](https://pages.github.com/), full preview at [preview the theme to see what it looks like](http://dracula.github.io/jekyll).
 
-![Thumbnail of Dracula](thumbnail.png)
+![Screenshot](thumbnail.png)
 
-## Usage
+## Install
+
+All instructions can be found at [draculatheme.com/ghpages](https://draculatheme.com/ghpages).
 
 To use the Dracula theme:
 
@@ -22,9 +24,9 @@ To use the Dracula theme:
     gem "github-pages", group: :jekyll_plugins
     ```
 
-## Customizing
+### Customizing
 
-### Configuration variables
+#### Configuration variables
 
 Dracula will respect the following variables, if set in your site's `_config.yml`:
 
@@ -41,7 +43,7 @@ google_analytics: [Your Google Analytics tracking ID]
 show_header: ["true" or "false" to indicate whether to show the top header]
 ```
 
-### Stylesheet
+#### Stylesheet
 
 If you'd like to add your own custom styles:
 
@@ -57,7 +59,7 @@ If you'd like to add your own custom styles:
 
 *Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
-### Layouts
+#### Layouts
 
 If you'd like to change the theme's HTML layout:
 
@@ -66,7 +68,7 @@ If you'd like to change the theme's HTML layout:
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like
 
-### Overriding GitHub-generated URLs
+#### Overriding GitHub-generated URLs
 
 Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
 
@@ -83,7 +85,7 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
-### Previewing the theme locally
+#### Previewing the theme locally
 
 If you'd like to preview the theme locally (for example, in the process of proposing a change):
 
@@ -93,6 +95,18 @@ If you'd like to preview the theme locally (for example, in the process of propo
 4. Run `bundle exec jekyll serve` to start the preview server
 5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
 
-### Running tests
+#### Running tests
 
 The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+
+## Team
+
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ghpages/graphs/contributors).
+
+[![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) | 
+--- | 
+[backlands](https://github.com/backlands) | 
+
+## License
+
+[MIT License](./LICENSE)
