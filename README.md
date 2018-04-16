@@ -4,27 +4,13 @@
 
 > A dark theme for [GitHub Pages](https://pages.github.com/), full preview at [preview the theme to see what it looks like](http://dracula.github.io/gh-pages/preview).
 
-![Screenshot](thumbnail.png)
+![Screenshot](https://draculatheme.com/assets/img/screenshots/gh-pages.png)
 
 ## Install
 
 All instructions can be found at [draculatheme.com/gh-pages](https://draculatheme.com/gh-pages).
 
-To use the Dracula theme:
-
-1. Add the following to your site's `_config.yml`:
-
-    ```yml
-    remote_theme: "dracula/gh-pages"
-    ```
-
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-### Customizing
+## Customizing
 
 #### Configuration variables
 
@@ -103,9 +89,9 @@ The theme contains a minimal test suite, to ensure a site with the theme would b
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ghpages/graphs/contributors).
 
-[![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) | 
---- | 
-[backlands](https://github.com/backlands) | 
+[![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) |
+--- |
+[backlands](https://github.com/backlands) |
 
 ## License
 
