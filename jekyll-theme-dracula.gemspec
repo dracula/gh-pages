@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-dracula"
-  s.version       = "0.0.1"
-  s.license       = "CC0-1.0"
+  s.version       = "0.1.0"
+  s.license       = "MIT"
   s.authors       = ["Eric Klempnauer"]
   s.email         = ["questions@eric-klempnauer.com"]
-  s.homepage      = "https://github.com/backlands/dracula"
+  s.homepage      = "https://draculatheme.com/gh-pages/"
   s.summary       = "Dracula is a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|
