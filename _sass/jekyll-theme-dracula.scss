@@ -5,7 +5,7 @@
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
-  font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/1.5 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#f8f8f2;
   font-weight: normal;
   background: #282a36;
@@ -14,9 +14,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Serif", "Inconsolata", "Times New Roman", Times, serif;
   color: #8be9fd;
   margin:0 0 10px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -26,27 +26,42 @@ p, ul, ol, table, pre, dl {
 
 h1, h2, h3 {
   line-height:1.1;
-
 }
 
 h1 {
   color:#50fa7b;
-  font-size:28px;
+  font-size:48px;
+  line-height: 52px;
 }
 
 h2 {
-  font-size: 24px;
-}
-
-h4, h5, h6 {
-  color:#f1fa8c;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h4, h5, h6 {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#f1fa8c;
+  font-weight: 600;
+}
+
+h4 {
   font-size: 18px;
-  line-height: 24px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  line-height: 21px;
+}
+
+h5, h6 {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+h6 {
+  font-weight: 400;
 }
 
 a {
@@ -71,8 +86,7 @@ ul{
 }
 
 strong {
-  font-family: 'OpenSansBold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -126,8 +140,7 @@ th {
   background: #6272a4;
   border-bottom:1px solid #ff79c6;
   color: #f8f8f2;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 td {
@@ -146,8 +159,7 @@ hr {
 
 dt {
   color:#f1fa8c;
-  font-family: 'OpenSansSemibold', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 
@@ -169,8 +181,7 @@ dt {
     margin: 6px auto;
 
     li {
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
+      font-weight: 300;
       list-style: none;
       display: inline;
       color: #f8f8f2;
@@ -226,18 +237,14 @@ section {
     padding: 0 0 5px 0;
 
     h1 {
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      font-size: 40px;
       text-align: center;
       line-height: 36px;
     }
 
     p {
       color: #f8f8f2;
-      font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: normal;
-      font-size: 18px;
+      font-weight: 400;
+      font-size: 24px;
       text-align: center;
     }
   }
@@ -245,7 +252,6 @@ section {
     hr { margin-top:30px; }
     .credits {
       font-size: 11px;
-      font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal;
       color: #6272a4;
       margin-top: -10px;
