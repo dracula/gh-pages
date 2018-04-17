@@ -4,3 +4,6 @@ show_downloads: true
 google_analytics:
 remote_theme: "dracula/gh-pages"
 show_header: true
+
+sass:
+    style: compressed
