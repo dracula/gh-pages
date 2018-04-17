@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/dracula/gh-pages.svg?branch=master)](https://travis-ci.org/dracula/gh-pages)
 
-> A dark theme for [GitHub Pages](https://pages.github.com/), full preview at [preview the theme to see what it looks like](http://dracula.github.io/gh-pages/preview).
+> A dark theme for [GitHub Pages](https://pages.github.com/), full preview at [preview the theme to see what it looks like](http://dracula.github.io/gh-pages/).
 
 ![Screenshot](https://draculatheme.com/assets/img/screenshots/gh-pages.png)
 
 ## Install
 
-All instructions can be found at [draculatheme.com/gh-pages](https://draculatheme.com/gh-pages).
+All instructions can be found at [draculatheme.com/github-pages](https://draculatheme.com/github-pages).
 
 ## Customizing
 
