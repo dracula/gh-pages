@@ -1,21 +1,22 @@
 @import "normalize";
 @import "fonts";
+@import "variables";
 @import "rouge-dracula.scss";
 
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
-  font:16px/1.5 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#f8f8f2;
+  font:16px/1.5 $body-fonts;
+  color:$foreground;
   font-weight: normal;
-  background: #282a36;
+  background: $background;
   background-attachment: fixed !important;
-  background: linear_gradient(#282a36, #3a3b50);
+  background: linear_gradient($background, lighten($background, 20%));
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Serif", "Inconsolata", "Times New Roman", Times, serif;
-  color: #8be9fd;
+  font-family: $heading-fonts;
+  color: $cyan;
   margin:0 0 10px;
   font-weight: normal;
 }
@@ -29,7 +30,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  color:#50fa7b;
+  color:$green;
   font-size:48px;
   line-height: 52px;
 }
@@ -45,8 +46,8 @@ h3 {
 }
 
 h4, h5, h6 {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#f1fa8c;
+  font-family: $body-fonts;
+  color:$yellow;
   font-weight: 600;
 }
 
@@ -65,21 +66,22 @@ h6 {
 }
 
 a {
-  color:#50fa7b;
+  color:$green;
   font-weight:400;
   text-decoration:none;
 
   &:hover {
-    color: #50fa7bb3;
+    color: darken($green, 20%);
   }
 }
 
 a small {
   font-size:11px;
-  color:#6272a4;
+  color:$comment;
   margin-top:-0.6em;
   display:block;
 }
+
 
 ul{
   list-style-image:url('../images/bullet.png');
@@ -101,15 +103,15 @@ section img {
 }
 
 blockquote {
-  border-left:3px solid #50fa7b;
+  border-left:3px solid $green;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
 }
 
 code {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
-  color:#f8f8f2;
+  font-family: $mono-fonts;
+  color:$foreground;
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -117,13 +119,13 @@ code {
 
 pre {
   padding:8px 15px;
-  background: #282a36;
-  border:1px solid #ff79c6;
+  background: $background;
+  border:1px solid $pink;
   overflow: auto;
   overflow-y: hidden;
 
   code {
-    color: #f8f8f2;
+    color: $foreground;
     margin: 0;
     padding: 0;
   }
@@ -137,28 +139,28 @@ table {
 th {
   text-align:left;
   padding:5px 10px;
-  background: #6272a4;
-  border-bottom:1px solid #ff79c6;
-  color: #f8f8f2;
+  background: $comment;
+  border-bottom:1px solid $pink;
+  color: $foreground;
   font-weight: 600;
 }
 
 td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #bd93f9;
+  border-bottom:1px solid $purple;
 }
 
 hr {
   border: 0;
   outline: none;
   height: 3px;
-  background: #50fa7b;
   margin: 0 0 20px;
+  background: $green;
 }
 
 dt {
-  color:#f1fa8c;
+  color:$yellow;
   font-weight: 600;
 }
 
@@ -170,9 +172,8 @@ dt {
   height: 60px;
   width: 100%;
   position: fixed;
-  background: #44475a;
-  border-bottom: 4px solid #8be9fd;
-  box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+  background: $current;
+  border-bottom: 4px solid $cyan;
 
   nav {
     max-width: 650px;
@@ -184,13 +185,13 @@ dt {
       font-weight: 300;
       list-style: none;
       display: inline;
-      color: #f8f8f2;
+      color: $foreground;
       line-height: 50px;
       font-size: 14px;
 
       a {
-        color: #f8f8f2;
-        border: 1px solid #8be9fd;
+        color: $foreground;
+        border: 1px solid $cyan;
         background: none;
         padding: 10px 12px;
         margin-top: 6px;
@@ -200,8 +201,8 @@ dt {
         text-align:center;
 
         &:hover {
-          background-color: #6272a4;
-          border: 1px solid #6272a4;
+          background-color: $comment;
+          border: 1px solid $comment;
         }
       }
 
@@ -245,7 +246,7 @@ section {
     }
 
     p {
-      color: #f8f8f2;
+      color: $foreground;
       font-weight: 400;
       font-size: 24px;
     }
@@ -255,7 +256,7 @@ section {
     .credits {
       font-size: 11px;
       font-weight: normal;
-      color: #6272a4;
+      color: $comment;
       margin-top: -10px;
 
       &.left {
@@ -304,3 +305,5 @@ section {
     display: none;
   }
 }
+
+@import "colorspaces.scss";
