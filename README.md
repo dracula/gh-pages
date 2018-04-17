@@ -29,6 +29,11 @@ google_analytics: [Your Google Analytics tracking ID]
 show_header: ["true" or "false" to indicate whether to show the top header]
 ```
 
+There are also currently the following optional page variables:
+```yml
+icon: [filename including extension of the icon in /assets/images, png recommended]
+```
+
 #### Stylesheet
 
 If you'd like to add your own custom styles:

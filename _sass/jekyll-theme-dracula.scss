@@ -229,15 +229,18 @@ section {
   padding: 30px 0px 50px 0px;
   margin: 20px 0;
   margin-top: 70px;
-
+  &.no-header { margin-top: 0; }
   #title {
     border: 0;
     outline: none;
-    margin: 0 0 50px 0;
+    margin: 0 0 25px 0;
     padding: 0 0 5px 0;
-
+    text-align: center;
+    img {
+      max-width: 200px;
+      padding-bottom: 32px;
+    }
     h1 {
-      text-align: center;
       line-height: 36px;
     }
 
@@ -245,7 +248,6 @@ section {
       color: #f8f8f2;
       font-weight: 400;
       font-size: 24px;
-      text-align: center;
     }
   }
   #footer {

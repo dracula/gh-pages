@@ -1,5 +1,6 @@
 ---
 layout: default
+icon: candies.png
 ---
 
 ## Welcome to another page
