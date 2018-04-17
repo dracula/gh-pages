@@ -31,7 +31,7 @@ show_header: ["true" or "false" to indicate whether to show the top header]
 
 There are also currently the following optional page variables:
 ```yml
-icon: [filename including extension of the icon in /assets/images, png recommended]
+icon: [path to file including extension]
 colorspace: [primary page color cyan/green/orange/pink/purple/red/yellow]
 ```
 

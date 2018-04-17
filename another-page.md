@@ -1,6 +1,6 @@
 ---
 layout: default
-icon: candies.png
+icon: /assets/images/candies.png
 colorspace: red
 ---
 
