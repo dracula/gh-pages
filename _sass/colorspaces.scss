@@ -1,0 +1,85 @@
+// Colorspace overrides
+
+.cyan {
+  h1 { color: $cyan; }
+  h2, h3 { color: $green; }
+  h4, h5, h6 { color: $orange; }
+  a {
+    color: $cyan;
+    &:hover { color: darken($cyan, 20%); }
+  }
+  hr { background: $cyan; }
+  blockquote { border-color: $cyan; }
+}
+
+.green {
+  h1 { color: $green; }
+  h2, h3 { color: $cyan; }
+  h4, h5, h6 { color: $yellow; }
+  a {
+    color: $green;
+    &:hover { color: darken($green, 20%); }
+  }
+  hr { background: $green; }
+  blockquote { border-color: $green; }
+}
+
+.orange {
+  h1 { color: $orange; }
+  h2, h3 { color: $yellow; }
+  h4, h5, h6 { color: $green; }
+  a {
+    color: $orange;
+    &:hover { color: darken($orange, 20%); }
+  }
+  hr { background: $orange; }
+  blockquote { border-color: $orange; }
+}
+
+.pink {
+  h1 { color: $pink; }
+  h2, h3 { color: $purple; }
+  h4, h5, h6 { color: $orange; }
+  a {
+    color: $pink;
+    &:hover { color: darken($pink, 20%); }
+  }
+  hr { background: $pink; }
+  blockquote { border-color: $pink; }
+}
+
+.purple {
+  h1 { color: $purple; }
+  h2, h3 { color: $green; }
+  h4, h5, h6 { color: $cyan; }
+  a {
+    color: $purple;
+    &:hover { color: darken($purple, 20%); }
+  }
+  hr { background: $purple; }
+  blockquote { border-color: $purple; }
+}
+
+.red {
+  h1 { color: $red; }
+  h2, h3 { color: $yellow; }
+  h4, h5, h6 { color: $pink; }
+  a {
+    color: $red;
+    &:hover { color: darken($red, 20%); }
+  }
+  hr { background: $red; }
+  blockquote { border-color: $red; }
+}
+
+.yellow {
+  h1 { color: $yellow; }
+  h2, h3 { color: $pink; }
+  h4, h5, h6 { color: $green; }
+  a {
+    color: $yellow;
+    &:hover { color: darken($yellow, 20%); }
+  }
+  hr { background: $yellow; }
+  blockquote { border-color: $yellow; }
+}

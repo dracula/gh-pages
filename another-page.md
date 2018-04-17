@@ -1,6 +1,7 @@
 ---
 layout: default
 icon: candies.png
+colorspace: red
 ---
 
 ## Welcome to another page
