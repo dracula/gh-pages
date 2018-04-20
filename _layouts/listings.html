@@ -36,7 +36,7 @@
       {% else %}<section class="no-header">{% endif %}
         <div id="title">
           {% if page.icon %}
-            <img src="{{ site.url }}/assets/images/{{ page.icon }}" />
+          <img src="{{ page.icon | relative_url }}" />
           {% endif %}
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -56,7 +56,7 @@
                   {% else %}
                     <a href="{{ listing[1].link | baseurl }}">
                   {% endif %}
-                    <img src="{{ listing[1].icon | baseurl }}" />
+                    <img src="{{ listing[1].icon | relative_url }}" />
                     <h3>{{ listing[0] }}</h3>
                   </a>
                 </div>
