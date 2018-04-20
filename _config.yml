@@ -1,6 +1,5 @@
-title: Dracula theme
-description: Dracula is a theme for GitHub Pages.
-show_downloads: true
+title: Dracula GitHub Pages
+show_downloads: false
 google_analytics:
 remote_theme: "dracula/gh-pages"
 show_header: true
