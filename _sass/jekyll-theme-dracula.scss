@@ -1,7 +1,9 @@
 @import "normalize";
 @import "fonts";
 @import "variables";
+@import "mixins";
 @import "rouge-dracula.scss";
+@import "colorspaces.scss";
 
 body {
   padding:0px 0 20px 0px;
@@ -112,6 +114,7 @@ blockquote {
 code {
   font-family: $mono-fonts;
   color:$foreground;
+  background: $current;
   font-size:13px;
   margin: 0 4px;
   padding: 4px 6px;
@@ -140,7 +143,6 @@ th {
   text-align:left;
   padding:5px 10px;
   background: $comment;
-  border-bottom:1px solid $pink;
   color: $foreground;
   font-weight: 600;
 }
@@ -162,6 +164,24 @@ hr {
 dt {
   color:$yellow;
   font-weight: 600;
+}
+
+button, a.button {
+  color: $background;
+  border: 1px solid $cyan;
+  background: $cyan;
+  padding: 10px 12px;
+  margin-top: 6px;
+  line-height:14px;
+  font-size:14px;
+  font-weight: bold;
+  display:inline-block;
+  text-align:center;
+  &:hover {
+    background: $comment;
+    color: $foreground;
+    border-color: $comment;
+  }
 }
 
 
@@ -270,8 +290,50 @@ section {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+.listings-category {
+  text-align: center;
+  .title {
+    margin-bottom: 16px;
+    transform: rotate(-5deg);
+  }
+  &:nth-child(2n) {
+    .title { transform: rotate(5deg); }
+  }
+  &:nth-child(6n+1) {
+    .title { color: $cyan; }
+  }
+  &:nth-child(6n+2) {
+    .title { color: $orange; }
+  }
+  &:nth-child(6n+3) {
+    .title { color: $purple; }
+  }
+  &:nth-child(6n+4) {
+    .title { color: $red; }
+  }
+  &:nth-child(6n+5) {
+    .title { color: $pink; }
+  }
+  .listing {
+    width: 32.32%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 16px;
+    margin-bottom: 32px;
+    vertical-align: text-top;
+    &:nth-child(3n+2) { @include clear(); }
+    a {
+      display: block;
+      h3 {
+        color: $faded;
+        margin-top: 8px;
+      }
+    }
+  }
+  @include clearfix();
+}
 
+@media print, screen and (max-width: 720px) {
   #title {
     .credits {
       display: block;
@@ -290,10 +352,15 @@ section {
       }
     }
   }
+
+  .listings-category {
+    .listing {
+      width: 49%;
+    }
+  }
 }
 
 @media print, screen and (max-width: 480px) {
-
   #header {
     margin-top: -20px;
   }
@@ -301,9 +368,14 @@ section {
   section {
     margin-top: 40px;
   }
+
   nav {
     display: none;
   }
-}
 
-@import "colorspaces.scss";
+  .listings-category {
+    .listing {
+      width: 100%;
+    }
+  }
+}

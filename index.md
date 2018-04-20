@@ -2,9 +2,10 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+### Preview Page Types
+[Listing Pages](/samples/listings-page)
 
-[Link to another page](another-page).
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 There should be whitespace between paragraphs.
 
