@@ -4,7 +4,7 @@
 
 > A dark theme for [GitHub Pages](https://pages.github.com/), full preview at [preview the theme to see what it looks like](http://dracula.github.io/gh-pages/).
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/gh-pages.png)
+![Screenshot](./screenshot.png)
 
 ## Install
 
