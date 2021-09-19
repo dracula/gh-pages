@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-dracula"
-  s.version       = "0.1.0"
+  s.version       = "0.2.0"
   s.license       = "MIT"
   s.authors       = ["Eric Klempnauer"]
   s.email         = ["questions@eric-klempnauer.com"]
