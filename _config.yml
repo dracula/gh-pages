@@ -6,3 +6,6 @@ show_header: true
 
 sass:
     style: compressed
+
+plugins:
+  - jekyll-seo-tag
