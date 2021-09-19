@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
   s.authors       = ["Eric Klempnauer"]
   s.email         = ["questions@eric-klempnauer.com"]
-  s.homepage      = "https://draculatheme.com/gh-pages/"
+  s.homepage      = "https://draculatheme.com/github-pages"
   s.summary       = "Dracula is a Jekyll theme for GitHub Pages"
 
   s.files         = `git ls-files -z`.split("\x0").select do |f|

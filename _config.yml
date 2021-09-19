@@ -1,8 +1,24 @@
+# SEO Values
 title: Dracula GitHub Pages
-show_downloads: false
+tagline: The renowned dark theme for ...
+description: The renowned dark theme for ...
+url: https://dracula.github.io/gh-pages/
+twitter: https://twitter.com/zenorocha
+logo: https://draculatheme.com/static/icons/pack-1/045-dracula.svg
+
+# Google Analytics ID
 google_analytics:
-remote_theme: "dracula/gh-pages"
+
+# GitHub Values
+github:
+  owner_name: Dracula
+  owner_url: https://github.com/dracula
+  repository_url: https://github.com/dracula/gh-pages
+  zip_url: https://github.com/pages-themes/cayman/archive/refs/heads/master.zip
+
+show_downloads: true
 show_header: true
+remote_theme: "dracula/gh-pages"
 
 sass:
     style: compressed

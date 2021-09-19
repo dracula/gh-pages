@@ -15,21 +15,30 @@
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
+
   <body class="{{ page.colorspace }}">
-      {% if site.show_header %}
-        <div id="header">
-          <nav>
+    {% if site.show_header %}
+      <div id="header">
+        <nav>
+          {% if site.github.repository_url %}
             <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-            {% if site.show_downloads %}
+          {% endif %}
+
+          {% if site.show_downloads %}
+            {% if site.github.zip_url %}
               <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-              <li class="title">DOWNLOADS</li>
             {% endif %}
-          </nav>
-        </div><!-- end header -->
-      {% endif %}
+
+            {% if site.github.tar_url %}
+              <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
+            {% endif %}
+
+            <li class="title">DOWNLOADS</li>
+          {% endif %}
+        </nav>
+      </div><!-- end header -->
+    {% endif %}
 
     <div class="wrapper">
       {% if site.show_header %}<section>
