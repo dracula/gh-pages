@@ -14,7 +14,6 @@ github:
   owner_name: Dracula
   owner_url: https://github.com/dracula
   repository_url: https://github.com/dracula/gh-pages
-  zip_url: https://github.com/pages-themes/cayman/archive/refs/heads/master.zip
 
 show_downloads: true
 show_header: true
