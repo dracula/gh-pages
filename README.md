@@ -93,7 +93,7 @@ The theme contains a minimal test suite, to ensure a site with the theme would b
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/ghpages/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/gh-pages/graphs/contributors).
 
 [![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) |
 --- |
