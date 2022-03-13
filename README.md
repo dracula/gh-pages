@@ -30,6 +30,7 @@ show_header: ["true" or "false" to indicate whether to show the top header]
 ```
 
 There are also currently the following optional page variables:
+
 ```yml
 icon: [path to file including extension]
 colorspace: [primary page color cyan/green/orange/pink/purple/red/yellow]
@@ -41,21 +42,23 @@ If you'd like to add your own custom styles:
 
 1. Create a file called `/assets/css/style.scss` in your site
 2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
 
-    @import "{{ site.theme }}";
-    ```
+   ```scss
+   ---
+   ---
+
+   @import "{{ site.theme }}";
+   ```
+
 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+_Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet._
 
 #### Layouts
 
 If you'd like to change the theme's HTML layout:
 
-1. [Copy the original template](https://github.com/dracula/gh-pages/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+1. [Copy the original template](https://github.com/dracula/gh-pages/blob/master/_layouts/default.html) from the theme's repository<br />(_Pro-tip: click "raw" to make copying easier_)
 2. Create a file called `/_layouts/default.html` in your site
 3. Paste the default layout content copied in the first step
 4. Customize the layout as you'd like
@@ -66,14 +69,14 @@ Templates often rely on URLs supplied by GitHub such as links to your repository
 
 1. Look at [the template source](https://github.com/dracula/gh-pages/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
 2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
+   ```yml
+   github:
+     zip_url: http://example.com/download.zip
+     another_url: another value
+   ```
 3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+_Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`._
 
 For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
 
@@ -95,9 +98,15 @@ The theme contains a minimal test suite, to ensure a site with the theme would b
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/gh-pages/graphs/contributors).
 
-[![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) |
---- |
-[backlands](https://github.com/backlands) |
+| [![backlands](https://avatars1.githubusercontent.com/u/12586299?v=3&s=70)](https://github.com/backlands) |
+| -------------------------------------------------------------------------------------------------------- |
+| [backlands](https://github.com/backlands)                                                                |
+
+## Community
+
+- [Twitter](https://twitter.com/draculatheme) - Best for getting updates about themes and new stuff.
+- [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
+- [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
 
 ## License
 
