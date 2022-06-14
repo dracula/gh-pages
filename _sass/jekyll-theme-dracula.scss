@@ -185,6 +185,47 @@ button, a.button {
   }
 }
 
+details {
+  &>summary {
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▷";
+      padding-inline-end: 8px;
+    }
+  }
+}
+
+details[open] {
+  &>summary {
+    &::before {
+      content: "▽";
+    }
+  }
+}
+
+[dir="rtl"] {
+  details {
+    &>summary {
+      &::before {
+        content: "◁";
+      }
+    }
+  }
+
+  details[open] {
+    &>summary {
+      &::before {
+        content: "▽";
+      }
+    }
+  }
+}
+
 
 #header {
   z-index: 100;
